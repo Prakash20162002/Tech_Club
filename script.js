@@ -43,20 +43,21 @@ $(document).ready(function () {
     // Separate addresses for each category
     const addresses = {
         student: [
-            "101 MG Road, Mumbai, Maharashtra",
-            "5-89 Lajpat Nagar, Delhi",
-            "45 Park Street, Kolkata, West Bengal"
+            "101 MG Road",
+            "5-89 Lajpat Nagar",
+            "45 Park Street"
         ],
         passport: [
-            "123 Elm St, Springfield, IL, USA",
-            "456 Maple Ave, Toronto, ON, Canada",
-            "789 Pine Rd, Sydney, NSW, Australia"
+            "123 Elm St, Springfield",
+            "456 Maple Ave, Toronto",
+            "789 Pine Rd, Sydney, NSW"
         ],
         organization: [
-            "1001 Corporate Blvd, New York, NY, USA",
-            "2002 Business Park, London, UK",
-            "3003 Industrial Way, Berlin, Germany"
+            "1001 Corporate Blvd, ",
+            "2002 Business Park",
+            "3003 Industrial Way"
         ]
+
     };
 
     // Define nationality options based on category
@@ -113,17 +114,15 @@ $(document).ready(function () {
     function displayUser(user) {
         const userInfo = document.getElementById("user-info");
         userInfo.innerHTML +=
-            `<p><strong>User:</strong></p>
-            <p>Name: ${user.name}</p>
-            <p>Age: ${user.age}</p>
-            <p>Phone: ${user.phone}</p>
-            <p>Address: ${user.address}</p>
-            <p>city: ${user.address}</p>
-            <p>stat: ${user.address}</p>
-            <p>Nationality: ${user.nationality}</p>
-            <p>${user.status || ''}</p>
-            <hr />`;
+            `<p>Name: ${user.name}</p>
+        <p>Age: ${user.age}</p>
+        <p>Phone: ${user.phone}</p>
+        <p>Address: ${user.address}</p>
+        <p>Nationality: ${user.nationality}</p>
+        <p>${user.status || ''}</p>
+        <hr />`;
     }
+
 
     function downloadCSV() {
         if (users.length === 0) {
