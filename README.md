@@ -1,6 +1,7 @@
 <h1 align="center">Random User Data Generator & PDF Generator with QR Code</h1>
 
 <p align="center">
+    <img src="Project Window.png">
     <b>Create a useful web applications:</b> <br>
     1. <strong>Random User Data Generator:</strong> Generates random user information and stores it in a CSV file. <br>
 </p>

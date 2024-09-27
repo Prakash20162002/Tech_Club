@@ -14,6 +14,8 @@
     <div class="top-left">Created by Prakash Halwai & Anuska Dutta</div>
     <div class="container">
         <h1>Random User Information Generator</h1>
+
+        <!-- Category Selection -->
         <div class="input-group">
             <label for="category" class="label">Select Category</label>
             <select id="category" class="input-field">
@@ -24,20 +26,50 @@
             </select>
         </div>
 
+        <!-- Student Type Selection -->
         <div class="input-group" id="student-type-group" style="display: none;">
             <label for="student-type" class="label">Select Student Type</label>
             <select id="student-type" class="input-field">
-                <option value="" disabled selected>--Select a Category--</option>
+                <option value="" disabled selected>--Select a Type--</option>
                 <option value="school">School Student</option>
                 <option value="college">College Student</option>
             </select>
         </div>
 
+        <!-- Passport Country Selection -->
+        <div class="input-group" id="passport-country-group" style="display: none;">
+            <label for="passport-country" class="label">Select Country</label>
+            <select id="passport-country" class="input-field">
+                <option value="" disabled selected>--Select a Country--</option>
+                <option value="India">India</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+
+        <!-- Organization Company Selection -->
+        <div class="input-group" id="organization-company-group" style="display: none;">
+            <label for="organization-type" class="label">Select Company</label>
+            <select id="organization-type" class="input-field">
+                <option value="" disabled selected>--Select a Company--</option>
+                <option value="Wipro">Wipro</option>
+                <option value="TCS">TCS</option>
+                <option value="Cognizant">Cognizant</option>
+                <option value="Deloitte">Deloitte</option>
+                <option value="Capgemini">Capgemini</option>
+                <!-- Add more companies as needed -->
+            </select>
+        </div>
+
+        <!-- Number of Users Input -->
         <div class="input-group">
             <label for="user-count" class="label">Number of Users</label>
             <input type="number" id="user-count" placeholder="Enter number of users" min="1" class="input-field" />
         </div>
 
+        <!-- Buttons Group -->
         <div class="button-group">
             <button id="generate" class="btn primary-btn">Generate User</button>
             <button id="download" class="btn secondary-btn">Download CSV</button>
@@ -45,10 +77,13 @@
             <button id="clear" class="btn clear-btn">Clear Information</button>
         </div>
 
+        <!-- Display Generated User Information -->
         <div id="user-info" class="user-info">
             <h2>Generated User Information:</h2>
             <!-- User info will be displayed here -->
         </div>
+
+        <!-- Display QR Code -->
         <div id="qr-code" class="qr-code">
             <h2>QR Code:</h2>
             <!-- QR Code will be displayed here -->
