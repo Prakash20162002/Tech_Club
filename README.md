@@ -73,7 +73,7 @@
 
 <h3><strong>Random User Data Generator</strong></h3>
 <ol>
-    <li>Open the app in your browser at <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>.</li>
+    <li>Open the app in your browser at <a href="http://192.168.0.107:5500/index.html" target="_blank">http://localhost:3000</a>.</li>
     <li>Click on "Generate Data" to create random user data.</li>
     <li>The data will be saved in a <code>data.csv</code> file in the root directory.</li>
 </ol>
